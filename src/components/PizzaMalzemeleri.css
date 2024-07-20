@@ -1,0 +1,72 @@
+.pizza-malzemeleri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.malzeme-item {
+    flex: 30%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #dddad5;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pizza-malzemeleri p {
+    width: 100%;
+    margin-top: 0;
+}
+
+.pizza-malzemeleri h2 {
+    font-size: 20px;
+    color: #292929;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.pizza-malzemeleri label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #dddad5;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pizza-malzemeleri input[type="checkbox"] {
+    display: none;
+}
+
+.pizza-malzemeleri input[type="checkbox"]:checked+label {
+    background-color: #FDC913;
+    border-color: #FDC913;
+    color: white;
+}
+
+.pizza-malzemeleri label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 2px solid #D9D9D9;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.pizza-malzemeleri input[type="checkbox"]:checked+label:before {
+    background-color: #FDC913;
+    border-color: #FDC913;
+    content: "✔";
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
